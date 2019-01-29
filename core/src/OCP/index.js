@@ -1,9 +1,15 @@
 /**
  *
  */
-import loader from './loader'
+import AppConfig from './appconfig'
+import Comments from './comments'
+import Loader from './loader'
+import WhatsNew from './whatsnew'
 
 /** @namespace OCP */
 export default {
-	Loader: loader,
+	AppConfig,
+	Comments,
+	Loader,
+	WhatsNew,
 };
