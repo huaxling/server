@@ -19,7 +19,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import Backbone from 'backbone';
+import VendorBackbone from 'backbone';
 
 import Apps from './apps'
 import AppConfig from './appconfig'
@@ -27,6 +27,8 @@ import ContactsMenu from './contactsmenu';
 import EventSource from './eventsource'
 import L10N from './l10n'
 import {davCall, davSync} from './backbone-webdav';
+
+const Backbone = VendorBackbone.noConflict();
 
 // Patch Backbone for DAV
 Object.assign(Backbone, {
